@@ -34,6 +34,9 @@ nnoremap <C-j> :m+<CR>
 inoremap <C-h> <Esc>:m-2<CR>
 inoremap <C-j> <Esc>:m+<CR>
 
-:map <C-k><C-c> 0i//<Esc>
-:map <C-k><C-u> 02x<CR>
+" old way to comment line
+" :map <C-k><C-c> 0i//<Esc>
+" :map <C-k><C-u> 02x<CR>
+
+" comment and uncomment line
 nmap <leader>cc :action CommentByLineComment<CR>
