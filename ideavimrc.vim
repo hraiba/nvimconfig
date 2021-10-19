@@ -1,8 +1,3 @@
-"" Source your .vimrc
-"source ~/.vimrc
-
-"" -- Suggested options --
-" Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
@@ -11,17 +6,6 @@ set incsearch
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
-
-
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
 
 let mapleader = ";"
 
@@ -34,9 +18,21 @@ nnoremap <C-j> :m+<CR>
 inoremap <C-h> <Esc>:m-2<CR>
 inoremap <C-j> <Esc>:m+<CR>
 
-" old way to comment line
-" :map <C-k><C-c> 0i//<Esc>
-" :map <C-k><C-u> 02x<CR>
+" Rider commands mapping 
 
 " comment and uncomment line
 nmap <leader>cc :action CommentByLineComment<CR>
+" start run
+nmap <leader>sr :action Run<CR>
+" stop run/Debug
+nmap <leader>sa :action Stop<CR>
+" start debug
+nmap <leader>sd :action Debug<CR>
+
+" Step Over 
+nmap <leader>so :action StepOver<CR>
+
+" Step into 
+nmap <leader>si :action StepInto<CR>
+
+nmap <leader>bp :action ToggleLineBreakpoint<CR>
