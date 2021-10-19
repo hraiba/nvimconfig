@@ -11,7 +11,7 @@ nnoremap <C-i> :vsc View.NavigateForward<CR>
 nnoremap gcc V:vsc Edit.CommentSelection<CR>
 nnoremap guu V:vsc Edit.UncommentSelection<CR>
 
-nnoremap ]q :vsc Edit.GoToNextLocation<CR>
-nnoremap [q :vsc Edit.GoToPrevLocation<CR>
-nnoremap ]l  :vsc Edit.NextHighlightedReference<CR>
-nnoremap [l  :vsc Edit.PreviousHighlightedReference<CR>
+nnoremap q; :vsc View.C#Interactive<cr>
+nnoremap q: :vsc View.CommandWindow<cr>
+nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
+nnoremap q] :vsc View.ErrorList<cr>
