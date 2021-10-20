@@ -17,6 +17,8 @@ nmap <leader>i <action>(Generate)
 
 " comment and uncomment line
 nmap <leader>cc :action CommentByLineComment<CR>
+
+nmap gwo :action ToggleFullScreen<CR>
 " start run
 nmap <leader>sr :action Run<CR>
 " stop run/Debug
