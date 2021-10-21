@@ -4,6 +4,8 @@ set scrolloff=5
 " Do incremental searching.
 set incsearch
 
+set NERDTree
+
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
@@ -12,6 +14,9 @@ let mapleader = ";"
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
 nmap <leader>i <action>(Generate)
+nmap gn :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeFocus<CR>
+nmap <leader>f :NERDTreeFind<CR>
 
 " Rider commands mapping 
 
