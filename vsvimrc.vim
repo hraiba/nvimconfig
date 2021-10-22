@@ -8,8 +8,8 @@ nnoremap <C-u> <PageUp>
 nnoremap <C-o> :vsc View.NavigateBackward<CR>
 nnoremap <C-i> :vsc View.NavigateForward<CR>
 
-nnoremap gcc V:vsc Edit.CommentSelection<CR>
-nnoremap guu V:vsc Edit.UncommentSelection<CR>
+nnoremap ;cc V:vsc Edit.CommentSelection<CR>
+nnoremap ;uu V:vsc Edit.UncommentSelection<CR>
 
 nnoremap q; :vsc View.C#Interactive<cr>
 nnoremap q: :vsc View.CommandWindow<cr>
