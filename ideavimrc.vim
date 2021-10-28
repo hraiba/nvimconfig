@@ -17,7 +17,10 @@ nmap <leader>i <action>(Generate)
 nmap gn :NERDTreeToggle<CR>
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <leader>f :NERDTreeFind<CR>
-
+nmap <leader>sv <action>(SplitVertically)
+nmap <leader>mog <action>(MoveEditorToOppositeTabGroupS)
+nmap <leader>t <action>(SearchEverywhere)
+nmap <leader>ww <action>(ExtendSelection)
 " Rider commands mapping 
 
 " comment and uncomment line
