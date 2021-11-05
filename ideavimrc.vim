@@ -18,17 +18,17 @@ nmap gn :NERDTreeToggle<CR>
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>sv <action>(MoveTabRight)
-nmap <leader>mog <action>(MoveEditorToOppositeTabGroupS)
+nmap <leader>mog <action>(MoveEditorToOppositeTabGroup)
 nmap <leader>t <action>(SearchEverywhere)
-nmap <leader>ww <action>(ExtendSelection)
+" nmap <leader>ww <action>(ExtendSelection)
 nmap gd <action>(GotoDeclaration)
 nmap gi <action>(GotoImplementation)
 nmap fu <action>(FindUsages)
-
+nmap <leader>ww <C-w><C-w>
 " Rider commands mapping 
 
 " comment and uncomment line
-nmap <leader>cc :action CommentByLineComment<CR>
+nnoremap <leader>cc :action CommentByLineComment<CR>
 
 nmap gwo :action ToggleFullScreen<CR>
 " start run
