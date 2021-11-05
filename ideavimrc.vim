@@ -17,10 +17,14 @@ nmap <leader>i <action>(Generate)
 nmap gn :NERDTreeToggle<CR>
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>sv <action>(SplitVertically)
+nmap <leader>sv <action>(MoveTabRight)
 nmap <leader>mog <action>(MoveEditorToOppositeTabGroupS)
 nmap <leader>t <action>(SearchEverywhere)
 nmap <leader>ww <action>(ExtendSelection)
+nmap gd <action>(GotoDeclaration)
+nmap gi <action>(GotoImplementation)
+nmap fu <action>(FindUsages)
+
 " Rider commands mapping 
 
 " comment and uncomment line
@@ -41,3 +45,8 @@ nmap <leader>so :action StepOver<CR>
 nmap <leader>si :action StepInto<CR>
 
 nmap <leader>bp :action ToggleLineBreakpoint<CR>
+
+" add breakline in normal mode
+nnoremap nl i<CR><ESC>k$
+nnoremap NL a<CR><ESC>k$
+
