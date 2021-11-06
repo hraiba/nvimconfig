@@ -16,15 +16,25 @@ nnoremap q: :vsc View.CommandWindow<CR>
 nnoremap q[ :vsc TestExplorer.ShowTestExplorer<CR>
 nnoremap q] :vsc View.ErrorList<CR>
 nnoremap ;q :vsc Window.QuickLaunch<CR>
+nnoremap ;gn :vsc View.SolutionExplorer<CR>
 
-nnoremap ;ds  :vsc Debug.Start<CR>
-nnoremap ;dsi :vsc Debug.StepInto<CR>
-nnoremap ;dso :vsc Debug.StepOver<CR>
-nnoremap ;dsv :vsc Debug.StepOut<CR>
-nnoremap ;sd  :vsc Debug.StopDebugging<CR>
-nnoremap ;tbp :vsc Debug.ToggleBreakpoint<CR>
-nnoremap ;de  :vsc Debug.EvaluateStatement<CR>
-nnoremap ;dcd :vsc DebuggerContextMenus.ProcessesWindow.ContinueProcess<CR>
+"debug
+nnoremap ds  :vsc Debug.Start<CR>
+nnoremap si :vsc Debug.StepInto<CR> " Keybinding managed by vs F11
+nnoremap so :vsc Debug.StepOver<CR> " Keybinding managed by vs F10
+nnoremap sv :vsc Debug.StepOut<CR>
+nnoremap sd  :vsc Debug.StopDebugging<CR>
+nnoremap tbp :vsc Debug.ToggleBreakpoint<CR>
+nnoremap de  :vsc Debug.EvaluateStatement<CR>
+nnoremap dcd :vsc DebuggerContextMenus.ProcessesWindow.ContinueProcess<CR>
+nnoremap ;rr :vsc Refactor.Rename<CR>
+nnoremap gd  :vsc Edit.GoToDefinition<CR>
+nnoremap gi  :vsc Edit.GoToImplementation<CR>
+nnoremap fu  :vsc Edit.FindAllReferences<CR>
+nnoremap ;ww <C-w><C-w>
 
-
+"Refactor
+nnoremap ;rr  :vsc Refactor.Rename<CR>
+nnoremap ;em  :vsc Refactor.ExtractMethod<CR>
+nnoremap gr :vsc Edit.FindAllReferences<cr>
 
