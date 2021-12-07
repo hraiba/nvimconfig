@@ -25,9 +25,13 @@ nmap gd <action>(GotoDeclaration)
 nmap gi <action>(GotoImplementation)
 nmap fu <action>(FindUsages)
 nmap <leader>ww <C-w><C-w>
+nmap <leader>rr <action>(RenameElement)
+nmap <leader>cp <action>(com.huawei.hap.actions.CleanProjectAction)
+nmap <leader>fr <action>(Replace)
+nmap <leader>cls <action>(ConsoleView.ClearAll)
 " Rider commands mapping 
 
-" comment and uncomment line
+" comment and uncomment line5
 nnoremap <leader>cc :action CommentByLineComment<CR>
 
 nmap gwo :action ToggleFullScreen<CR>
@@ -47,6 +51,6 @@ nmap <leader>si :action StepInto<CR>
 nmap <leader>bp :action ToggleLineBreakpoint<CR>
 
 " add breakline in normal mode
-nnoremap nl i<CR><ESC>k$
-nnoremap NL a<CR><ESC>k$
+nnoremap <leader>nl i<CR><ESC>k$
+nnoremap <leader>NL a<CR><ESC>k$
 
