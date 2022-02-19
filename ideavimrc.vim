@@ -9,7 +9,7 @@ set NERDTree
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-let mapleader = ";"
+let mapleader = "'"
 
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
