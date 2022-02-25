@@ -1,7 +1,5 @@
 let mapleader = ";"
 
-set NERDTree
-nnoremap gn :NERDTreeToggle<CR>
 nnoremap gwo :vsc FullScreen<CR>
 "Horizontal
 nnoremap gws :vsc Window.Split<CR> 
