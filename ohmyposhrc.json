@@ -33,7 +33,7 @@
         },
         {
           "type": "dotnet",
-          "style": "powerline",
+          "style": "plain",
           "foreground": "#906cff",
           "properties": {
             "template": "[ {{ .Full }}] "
@@ -44,7 +44,7 @@
           "properties": {
             "template": "[\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}] "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "python"
         },
         {
@@ -52,7 +52,7 @@
           "properties": {
             "template": "[\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "go"
         },
         {
@@ -60,7 +60,7 @@
           "properties": {
             "template": "[\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}] "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "node"
         },
         {
@@ -68,7 +68,7 @@
           "properties": {
             "template": "[\ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "ruby"
         },
         {
@@ -76,7 +76,7 @@
           "properties": {
             "template": "[\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "java"
         },
         {
@@ -84,7 +84,7 @@
           "properties": {
             "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
           },
-          "style": "powerline",
+          "style": "plain",
           "type": "julia"
         },
         {
