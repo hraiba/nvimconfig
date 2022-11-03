@@ -32,7 +32,6 @@ nmap <leader>cls <action>(ConsoleView.ClearAll)
 nmap <leader>ed  <action>(ShowErrorDescription)
 nmap <leader>pe <action>(ReSharperGotoPrevErrorInSolution)
 nmap <leader>ne <action>(ReSharperGotoNextErrorInSolution)
-nmap <leader>66 <action>(ActivateCommitToolWindow)
 
 " Rider commands mapping 
 
