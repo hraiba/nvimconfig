@@ -29,6 +29,11 @@ nmap <leader>rr <action>(RenameElement)
 nmap <leader>cp <action>(com.huawei.hap.actions.CleanProjectAction)
 nmap <leader>fr <action>(Replace)
 nmap <leader>cls <action>(ConsoleView.ClearAll)
+nmap <leader>ed  <action>(ShowErrorDescription)
+nmap <leader>pe <action>(ReSharperGotoPrevErrorInSolution)
+nmap <leader>ne <action>(ReSharperGotoNextErrorInSolution)
+nmap <leader>66 <action>(ActivateCommitToolWindow)
+
 " Rider commands mapping 
 
 " comment and uncomment line5
