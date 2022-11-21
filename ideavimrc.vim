@@ -5,11 +5,12 @@ set scrolloff=5
 set incsearch
 
 set NERDTree
+set multiple-cursors
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-let mapleader = "'"
+let mapleader = " "
 
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
@@ -32,6 +33,7 @@ nmap <leader>cls <action>(ConsoleView.ClearAll)
 nmap <leader>ed  <action>(ShowErrorDescription)
 nmap <leader>pe <action>(ReSharperGotoPrevErrorInSolution)
 nmap <leader>ne <action>(ReSharperGotoNextErrorInSolution)
+nmap <leader>sfp   <action>(ShowFilePath) 
 
 " Rider commands mapping 
 
