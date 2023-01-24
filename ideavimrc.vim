@@ -29,11 +29,12 @@ nmap <leader>ww <C-w><C-w>
 nmap <leader>rr <action>(RenameElement)
 nmap <leader>cp <action>(com.huawei.hap.actions.CleanProjectAction)
 nmap <leader>fr <action>(Replace)
-nmap <leader>cls <action>(ConsoleView.ClearAll)
+nmap <leader>clear <action>(ConsoleView.ClearAll)
 nmap <leader>ed  <action>(ShowErrorDescription)
 nmap <leader>pe <action>(ReSharperGotoPrevErrorInSolution)
 nmap <leader>ne <action>(ReSharperGotoNextErrorInSolution)
 nmap <leader>sfp   <action>(ShowFilePath) 
+nmap <leader>cls <action>(CloseProject)
 
 " Rider commands mapping 
 
