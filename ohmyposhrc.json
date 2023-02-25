@@ -1,103 +1,87 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
+          "type": "os",
+          "style": "plain",
           "foreground": "#26C6DA",
+          "template": "😈 ",
           "properties": {
-            "macos": "mac",
-            "template": "😈 "
-          },
-          "style": "plain",
-          "type": "os"
+            "macos": "mac"
+          }
         },
         {
+          "type": "path",
+          "style": "plain",
           "foreground": "lightGreen",
+          "template": "{{ .Path }} ",
           "properties": {
-            "style": "folder",
-            "template": "{{ .Path }} "
-          },
-          "style": "plain",
-          "type": "path"
+            "style": "folder"
+          }
         },
         {
+          "type": "git",
+          "style": "plain",
+          "template": "<#ffffff>on</> [{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}] ",
           "properties": {
             "branch_icon": "",
-            "fetch_stash_count": true,
-            "template": "<#ffffff>on</> [{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}] "
-          },
-          "style": "plain",
-          "type": "git"
+            "fetch_stash_count": true
+          }
         },
         {
           "type": "dotnet",
           "style": "plain",
           "foreground": "#906cff",
-          "properties": {
-            "template": "[ {{ .Full }}] "
-          }
+          "template": "[\ue70c {{ .Full }}] "
         },
         {
+          "type": "python",
+          "style": "plain",
           "foreground": "#906cff",
-          "properties": {
-            "template": "[\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}] "
-          },
-          "style": "plain",
-          "type": "python"
+          "template": "[\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}] "
         },
         {
+          "type": "go",
+          "style": "plain",
           "foreground": "#7FD5EA",
-          "properties": {
-            "template": "[\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
-          },
-          "style": "plain",
-          "type": "go"
+          "template": "[\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
         },
         {
+          "type": "node",
+          "style": "plain",
           "foreground": "#76b367",
-          "properties": {
-            "template": "[\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}] "
-          },
-          "style": "plain",
-          "type": "node"
+          "template": "[\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}] "
         },
         {
+          "type": "ruby",
+          "style": "plain",
           "foreground": "#f44336",
-          "properties": {
-            "template": "[\ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
-          },
-          "style": "plain",
-          "type": "ruby"
+          "template": "[\ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
         },
         {
+          "type": "java",
+          "style": "plain",
           "foreground": "#ea2d2e",
-          "properties": {
-            "template": "[\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
-          },
-          "style": "plain",
-          "type": "java"
+          "template": "[\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] "
         },
         {
+          "type": "julia",
+          "style": "plain",
           "foreground": "#4063D8",
-          "properties": {
-            "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
-          },
-          "style": "plain",
-          "type": "julia"
+          "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
-          "foreground": "#FFD54F",
-          "properties": {
-            "template": "\u276f "
-          },
+          "type": "text",
           "style": "plain",
-          "type": "text"
+          "foreground": "#FFD54F",
+          "template": "❯ "
         }
-      ],
-      "type": "prompt"
+      ]
     }
-  ],
-  "version": 1
+  ]
 }
