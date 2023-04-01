@@ -3,16 +3,28 @@ set scrolloff=5
 
 " Do incremental searching.
 set incsearch
+set ignorecase
+
+
+set showmode
+set showcmd
+
+set number
+set relativenumber
 
 set NERDTree
 set multiple-cursors
-set relativenumber
-set number
+set surround
+set highlightedyank
+set sneak
+
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
 let mapleader = " "
-
+" Folding
+map <leader>zc :action CollapseAllRegions<CR>
+map <leader>zo :action ExpandAllRegions<CR>
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
 nmap <leader>i <action>(Generate)
@@ -42,6 +54,9 @@ nmap <leader>wtb <action>(ViewToolButtons)
 nmap <leader>bar <action>(ViewStatusBar)
 nmap <leader>jfg <action>(FindMenuGroup)
 nmap <leader>adw <action>(ActivateDebugToolWindow)
+nmap <leader>bld <action>(BuildSelection)
+nmap <leader>his <action>(LocalHistory.ShowHistory)
+nmap <leader>rhis <action>(RecentChanges)
 " Rider commands mapping 
 
 " comment and uncomment line5
