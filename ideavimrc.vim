@@ -22,11 +22,20 @@ set sneak
 map Q gq
 
 let mapleader = " "
+map <leader><leader> <Action>(RecentFiles)
+map <leader>q <action>(CloseContent)
+
+" multiple cursors
+map mc <A-n>
+map mx <A-x>
+map mp <A-p>
+
 " Folding
 map <leader>zc :action CollapseAllRegions<CR>
 map <leader>zo :action ExpandAllRegions<CR>
 map <leader>]f :action CollapseRegionRecursively<CR>
 map <leader>[f   :action ExpandRegionRecursively<CR>
+
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
 nmap <leader>i <action>(Generate)
