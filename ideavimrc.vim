@@ -33,9 +33,8 @@ map mp <A-p>
 " Folding
 map <leader>zc :action CollapseAllRegions<CR>
 map <leader>zo :action ExpandAllRegions<CR>
-map <leader>]f :action CollapseRegionRecursively<CR>
-map <leader>[f   :action ExpandRegionRecursively<CR>
-
+map <leader>f] :action CollapseRegionRecursively<CR>
+map <leader>f[   :action ExpandRegionRecursively<CR>
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
 nmap <leader>i <action>(Generate)
@@ -66,7 +65,7 @@ nmap <leader>bar <action>(ViewStatusBar)
 nmap <leader>jfg <action>(FindMenuGroup)
 nmap <leader>adw <action>(ActivateDebugToolWindow)
 nmap <leader>bld <action>(BuildSelection)
-nmap <leader>his <action>(LocalHistory.ShowHistory)
+nmap <leader>shis <action>(LocalHistory.ShowHistory)
 nmap <leader>rhis <action>(RecentChanges)
 " Rider commands mapping 
 
