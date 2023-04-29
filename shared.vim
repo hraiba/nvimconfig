@@ -1,6 +1,6 @@
 
-nnoremap <C-k> :m-2<CR>
-nnoremap <C-j> :m+<CR>
+nnoremap <A-k> :m-2<CR>
+nnoremap <A-j> :m+<CR>
 
-inoremap <C-k> <Esc>:m-2<CR>
-inoremap <C-j> <Esc>:m+<CR>
+inoremap <A-k> <Esc>:m-2<CR>
+inoremap <A-j> <Esc>:m+<CR>

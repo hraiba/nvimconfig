@@ -10,7 +10,7 @@ set showmode
 set showcmd
 
 set number
-set relativenumber
+" set relativenumber
 
 set NERDTree
 set multiple-cursors
@@ -67,10 +67,15 @@ nmap <leader>adw <action>(ActivateDebugToolWindow)
 nmap <leader>bld <action>(BuildSelection)
 nmap <leader>shis <action>(LocalHistory.ShowHistory)
 nmap <leader>rhis <action>(RecentChanges)
+map <leader>bj <action>(Back)
+map <leader>bk <action>(Forward)
+map <leader>hw <action>(HideActiveWindow)
 " Rider commands mapping 
-
+map <leader>pi <action>(ParameterInfo)
 " comment and uncomment line5
-nnoremap <leader>cc :action CommentByLineComment<CR>
+map <leader>kc :action CommentByLineComment<CR>
+map <leader>kf :action ReformatCode<CR>
+
 
 noremap <C-Up> <Nop>
 noremap <C-Down> <Nop>
