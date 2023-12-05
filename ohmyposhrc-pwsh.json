@@ -91,7 +91,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "#FFD54F",
-          "template": "⚡"
+          "template": "⚡ "
         }
       ]
     }

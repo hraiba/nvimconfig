@@ -50,7 +50,7 @@ nmap gi <action>(GotoImplementation)
 nmap fu <action>(FindUsages)
 nmap <leader>ww <C-w><C-w>
 nmap <leader>rr <action>(RenameElement)
-nmap <leader>cp <action>(com.huawei.hap.actions.CleanProjectAction)
+" nmap <leader>cp <action>(com.huawei.hap.actions.CleanProjectAction)
 nmap <leader>fr <action>(Replace)
 nmap <leader>clear <action>(ConsoleView.ClearAll)
 nmap <leader>ed  <action>(ShowErrorDescription)
@@ -75,7 +75,7 @@ map <leader>pi <action>(ParameterInfo)
 " comment and uncomment line5
 map <leader>kc :action CommentByLineComment<CR>
 map <leader>kf :action ReformatCode<CR>
-
+map <leader>cp   <action>(CheckinProject)
 
 noremap <C-Up> <Nop>
 noremap <C-Down> <Nop>
