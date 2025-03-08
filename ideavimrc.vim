@@ -99,6 +99,6 @@ nmap <leader>si :action StepInto<CR>
 nmap <leader>bp :action ToggleLineBreakpoint<CR>
 
 " add breakline in normal mode
-nnoremap <leader>nl i<CR><ESC>k$
-nnoremap <leader>NL a<CR><ESC>k$
+nnoremap <leader>O i<CR><ESC>k$
+nnoremap <leader>o a<CR><ESC>k$
 
