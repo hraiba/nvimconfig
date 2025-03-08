@@ -121,7 +121,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": " ",
+          "template": "𝛌 ",
           "foreground": "#FFD54F",
           "type": "text",
           "style": "plain"
